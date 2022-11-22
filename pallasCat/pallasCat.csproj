@@ -58,6 +58,24 @@
     <Compile Include="frmBin2.Designer.cs">
       <DependentUpon>frmBin2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTabla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTabla.designer.cs">
+      <DependentUpon>frmTabla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWhileLoop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWhileLoop.designer.cs">
+      <DependentUpon>frmWhileLoop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBin2.resx">
@@ -65,6 +83,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPotencia2.resx">
       <DependentUpon>frmPotencia2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTabla.resx">
+      <DependentUpon>frmTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWhileLoop.resx">
+      <DependentUpon>frmWhileLoop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

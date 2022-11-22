@@ -1,4 +1,5 @@
-﻿using System;
+﻿using appLoop;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace pallasCat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPotencia2());
+            Application.Run(new frmMenu());
         }
     }
 }
