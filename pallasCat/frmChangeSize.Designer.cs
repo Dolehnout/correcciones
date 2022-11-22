@@ -36,7 +36,6 @@
             this.btnChange = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
@@ -90,7 +89,7 @@
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(130, 46);
             this.btnChange.TabIndex = 6;
-            this.btnChange.Text = "Cambiar de tamaño";
+            this.btnChange.Text = "Cambiar tamaño y fuente";
             this.btnChange.UseVisualStyleBackColor = true;
             this.btnChange.Click += new System.EventHandler(this.btnChange_Click);
             // 
@@ -102,6 +101,7 @@
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "Salir";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblResultado
             // 
@@ -112,15 +112,6 @@
             this.lblResultado.Size = new System.Drawing.Size(0, 29);
             this.lblResultado.TabIndex = 8;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(538, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 46);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Cambiar de Fuente";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // cmbTipo
             // 
             this.cmbTipo.FormattingEnabled = true;
@@ -128,7 +119,8 @@
             "Arial",
             "Times New Roman",
             "Calibri",
-            "Impact"});
+            "Impact",
+            "Cambria"});
             this.cmbTipo.Location = new System.Drawing.Point(448, 214);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(121, 21);
@@ -141,7 +133,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 578);
             this.Controls.Add(this.cmbTipo);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnChange);
@@ -167,7 +158,6 @@
         private System.Windows.Forms.Button btnChange;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblResultado;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cmbTipo;
     }
 }

@@ -121,5 +121,17 @@ namespace pallasCat
             frm6.MdiParent = this;
             frm6.Show();
         }
+
+        private void windowsMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cambiarTamañoFuenteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangeSize frm7 = new frmChangeSize();
+            frm7.MdiParent = this;
+            frm7.Show();
+        }
     }
 }

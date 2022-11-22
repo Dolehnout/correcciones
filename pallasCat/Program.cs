@@ -17,7 +17,7 @@ namespace pallasCat
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmChangeSize());
+            Application.Run(new frmMenu());
         }
     }
 }

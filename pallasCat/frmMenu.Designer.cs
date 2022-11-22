@@ -32,12 +32,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.binario1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.decimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tablaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.factorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conversiónDecimalABinarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.binarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.newWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cascadeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,12 +54,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.conversiónDecimalABinarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.binarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tablaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.factorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.binario1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.decimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cambiarTamañoFuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -80,6 +81,7 @@
             this.openToolStripMenuItem,
             this.tablaToolStripMenuItem,
             this.factorialToolStripMenuItem,
+            this.cambiarTamañoFuenteToolStripMenuItem,
             this.toolStripSeparator3,
             this.toolStripSeparator4,
             this.toolStripSeparator5,
@@ -89,15 +91,29 @@
             this.fileMenu.Size = new System.Drawing.Size(53, 20);
             this.fileMenu.Text = "&Bucles";
             // 
+            // binario1ToolStripMenuItem
+            // 
+            this.binario1ToolStripMenuItem.Name = "binario1ToolStripMenuItem";
+            this.binario1ToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.binario1ToolStripMenuItem.Text = "Binario 1";
+            this.binario1ToolStripMenuItem.Click += new System.EventHandler(this.binario1ToolStripMenuItem_Click);
+            // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
             this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.newToolStripMenuItem.Text = "&Binario 2";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.ShowNewForm);
+            // 
+            // decimalToolStripMenuItem
+            // 
+            this.decimalToolStripMenuItem.Name = "decimalToolStripMenuItem";
+            this.decimalToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.decimalToolStripMenuItem.Text = "Decimal";
+            this.decimalToolStripMenuItem.Click += new System.EventHandler(this.decimalToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
@@ -105,31 +121,59 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.openToolStripMenuItem.Text = "&Potencia";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.OpenFile);
+            // 
+            // tablaToolStripMenuItem
+            // 
+            this.tablaToolStripMenuItem.Name = "tablaToolStripMenuItem";
+            this.tablaToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.tablaToolStripMenuItem.Text = "Tabla";
+            this.tablaToolStripMenuItem.Click += new System.EventHandler(this.tablaToolStripMenuItem_Click);
+            // 
+            // factorialToolStripMenuItem
+            // 
+            this.factorialToolStripMenuItem.Name = "factorialToolStripMenuItem";
+            this.factorialToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.factorialToolStripMenuItem.Text = "Factorial";
+            this.factorialToolStripMenuItem.Click += new System.EventHandler(this.factorialToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(203, 6);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(203, 6);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(203, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.exitToolStripMenuItem.Text = "&Salir";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
+            // 
+            // conversiónDecimalABinarioToolStripMenuItem
+            // 
+            this.conversiónDecimalABinarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.binarioToolStripMenuItem});
+            this.conversiónDecimalABinarioToolStripMenuItem.Name = "conversiónDecimalABinarioToolStripMenuItem";
+            this.conversiónDecimalABinarioToolStripMenuItem.Size = new System.Drawing.Size(174, 20);
+            this.conversiónDecimalABinarioToolStripMenuItem.Text = "Conversión Decimal a Binario";
+            // 
+            // binarioToolStripMenuItem
+            // 
+            this.binarioToolStripMenuItem.Name = "binarioToolStripMenuItem";
+            this.binarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.binarioToolStripMenuItem.Text = "Binario";
             // 
             // windowsMenu
             // 
@@ -143,6 +187,7 @@
             this.windowsMenu.Name = "windowsMenu";
             this.windowsMenu.Size = new System.Drawing.Size(66, 20);
             this.windowsMenu.Text = "&Ventanas";
+            this.windowsMenu.Click += new System.EventHandler(this.windowsMenu_Click);
             // 
             // newWindowToolStripMenuItem
             // 
@@ -202,47 +247,12 @@
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // conversiónDecimalABinarioToolStripMenuItem
+            // cambiarTamañoFuenteToolStripMenuItem
             // 
-            this.conversiónDecimalABinarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.binarioToolStripMenuItem});
-            this.conversiónDecimalABinarioToolStripMenuItem.Name = "conversiónDecimalABinarioToolStripMenuItem";
-            this.conversiónDecimalABinarioToolStripMenuItem.Size = new System.Drawing.Size(174, 20);
-            this.conversiónDecimalABinarioToolStripMenuItem.Text = "Conversión Decimal a Binario";
-            // 
-            // binarioToolStripMenuItem
-            // 
-            this.binarioToolStripMenuItem.Name = "binarioToolStripMenuItem";
-            this.binarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.binarioToolStripMenuItem.Text = "Binario";
-            // 
-            // tablaToolStripMenuItem
-            // 
-            this.tablaToolStripMenuItem.Name = "tablaToolStripMenuItem";
-            this.tablaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.tablaToolStripMenuItem.Text = "Tabla";
-            this.tablaToolStripMenuItem.Click += new System.EventHandler(this.tablaToolStripMenuItem_Click);
-            // 
-            // factorialToolStripMenuItem
-            // 
-            this.factorialToolStripMenuItem.Name = "factorialToolStripMenuItem";
-            this.factorialToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.factorialToolStripMenuItem.Text = "Factorial";
-            this.factorialToolStripMenuItem.Click += new System.EventHandler(this.factorialToolStripMenuItem_Click);
-            // 
-            // binario1ToolStripMenuItem
-            // 
-            this.binario1ToolStripMenuItem.Name = "binario1ToolStripMenuItem";
-            this.binario1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.binario1ToolStripMenuItem.Text = "Binario 1";
-            this.binario1ToolStripMenuItem.Click += new System.EventHandler(this.binario1ToolStripMenuItem_Click);
-            // 
-            // decimalToolStripMenuItem
-            // 
-            this.decimalToolStripMenuItem.Name = "decimalToolStripMenuItem";
-            this.decimalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.decimalToolStripMenuItem.Text = "Decimal";
-            this.decimalToolStripMenuItem.Click += new System.EventHandler(this.decimalToolStripMenuItem_Click);
+            this.cambiarTamañoFuenteToolStripMenuItem.Name = "cambiarTamañoFuenteToolStripMenuItem";
+            this.cambiarTamañoFuenteToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.cambiarTamañoFuenteToolStripMenuItem.Text = "Cambiar tamaño | fuente";
+            this.cambiarTamañoFuenteToolStripMenuItem.Click += new System.EventHandler(this.cambiarTamañoFuenteToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
@@ -290,6 +300,7 @@
         private System.Windows.Forms.ToolStripMenuItem factorialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem binario1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem decimalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambiarTamañoFuenteToolStripMenuItem;
     }
 }
 
