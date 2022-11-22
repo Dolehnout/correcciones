@@ -107,5 +107,19 @@ namespace pallasCat
             frm4.MdiParent = this;
             frm4.Show();
         }
+
+        private void binario1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBinario frm5 = new frmBinario();
+            frm5.MdiParent = this;
+            frm5.Show();
+        }
+
+        private void decimalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDecimal frm6 = new frmDecimal();
+            frm6.MdiParent = this;
+            frm6.Show();
+        }
     }
 }

@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmChangeSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeSize.Designer.cs">
+      <DependentUpon>frmChangeSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBinario.designer.cs">
+      <DependentUpon>frmBinario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDecimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDecimal.designer.cs">
+      <DependentUpon>frmDecimal.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPotencia2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +98,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmBin2.resx">
       <DependentUpon>frmBin2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBinario.resx">
+      <DependentUpon>frmBinario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeSize.resx">
+      <DependentUpon>frmChangeSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDecimal.resx">
+      <DependentUpon>frmDecimal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPotencia2.resx">
       <DependentUpon>frmPotencia2.cs</DependentUpon>
